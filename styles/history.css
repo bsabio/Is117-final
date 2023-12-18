@@ -1,0 +1,81 @@
+/*Developer: Brandon Sabio,IS117-001, Fall 2023*/
+html{
+    background-color: 	#ffc99d;
+}
+/*styles for the header*/
+header{
+    border: 2px solid black;
+    margin-top:0;
+    margin-bottom:50px;
+    padding:.5em;
+}
+header h2{
+    text-align:center;
+    color:black;
+    margin:0;
+    font-family:verdana, sans-serif;
+}
+/*styles for the body*/
+body{
+    background-color: #ff964f;
+    text-align:center;
+    border: 2px solid black;
+    padding:5em;
+    margin:0 auto;
+    width:98%;
+    max-width:1200px;
+}
+body img{
+    margin:4%;
+    border:2px solid black;
+    height:17%;
+    width:17%;
+}
+/*styles for the footer*/
+footer{
+    background-color:white;
+    text-align:center;
+    padding:.2em;
+    border:2px solid black;
+    margin:0 auto;
+    width:52%;
+    margin-top:100px;
+}
+/*styles for the nav bar*/
+nav li{
+    float:left;
+    width:25%
+}
+nav ul li{
+    margin:0;
+    padding:0;
+    list-style-type:none;
+    position:relative;
+}
+
+nav ul li a{
+    display:block;
+    padding-top:1em;
+    padding-bottom:1em;
+    text-align:center;
+    color:black;
+    background-color:white;
+    text-decoration:none;
+}
+nav ul li ul{
+    display:none;
+    position:absolute;
+    top:100%;
+}
+nav ul ul li{
+	float:none;
+    width:120%;
+}
+nav ul li:hover > ul{
+display:block;
+}
+nav > ul::after{
+	content:"";
+	content:clear;
+	display:block;
+}
